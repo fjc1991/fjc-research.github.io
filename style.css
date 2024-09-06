@@ -12,12 +12,13 @@ header {
     text-align: center;
 }
 
-.profile-image {
+.profile-image img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 0 auto;
+    object-fit: cover;
     display: block;
+    margin: 0 auto;
 }
 
 h1 {

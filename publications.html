@@ -7,51 +7,49 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
-            max-width: 800px;
-            margin: auto;
+            color: #333;
+            background-color: white;
         }
         header {
-            background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
+            background-color: #ff0000;
             color: white;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+            padding: 20px 50px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
         }
-        nav ul li {
-            margin: 0 10px;
-        }
-        nav ul li a {
+        nav a {
             color: white;
             text-decoration: none;
-            padding: 5px 10px;
-        }
-        nav ul li a:hover {
-            background-color: #555;
+            margin-left: 20px;
         }
         main {
-            padding: 20px;
-        }
-        img {
-            max-width: 200px;
-            border-radius: 50%;
-            display: block;
+            padding: 50px;
+            max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content {
+            flex: 1;
+            padding-right: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            flex: 0 0 300px;
+        }
+        .profile-image img {
+            max-width: 100%;
+            border-radius: 10px;
         }
         footer {
-            background-color: #333;
+            background-color: #ff0000;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -63,29 +61,24 @@
 </head>
 <body>
     <header>
-        <img src="Resources/Profile Picture.jpeg" alt="Francis Joseph Costello">
-        <h1>Francis Joseph Costello</h1>
-        <p>Postdoctoral Researcher at The Chinese University of Hong Kong</p>
+        <div class="logo">Francis J. Costello</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="publications.html">Publications</a>
+            <a href="ai_blog.html">AI Blog</a>
+            <a href="cv.html">CV</a>
+            <a href="useful_links.html">Useful Links</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="ai_blog.html">AI Blog</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="useful_links.html">Useful Links</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <h2>Publications</h2>
-        <p>Content for PAGE_TITLE goes here.</p>
-        <!-- Add more content specific to each page here -->
+        <div class="content">
+            <h1>Publications</h1>
+            <p>Content for Current Research goes here.</p>
+            <!-- Add more content specific to research page here -->
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2024 Francis Joseph Costello. All rights reserved.</p>
     </footer>

@@ -12,15 +12,6 @@ header {
     text-align: center;
 }
 
-.profile-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
-
 h1 {
     margin-top: 20px;
 }
@@ -45,9 +36,40 @@ main {
     align-items: flex-start;
 }
 
-.content {
-    flex: 1;
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.profile-left {
+    flex: 2;
+    max-width: 600px;
     padding-right: 50px;
+}
+
+.profile-right {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 500px; /* Increased width to reduce whitespace */
+    height: 500px; /* Increased height to match width */
+    border-radius: 5%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-details p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+.profile-right {
+    max-width: 500px; /* Adjusted to match the new image size */
 }
 
 footer {
@@ -58,4 +80,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }

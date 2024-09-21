@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Current Research - Francis Joseph Costello</title>
     <link rel="stylesheet" href="style.css">
+        <style>
+        /* Flexbox layout to align image and text */
+        .publication {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 2px solid #ccc; /* Adds a border around each publication */
+            border-radius: 10px;
+            position: relative; /* Ensures padding applies to the entire box */
+        }
+
+        .publication img {
+            width: 300px;
+            margin-right: 20px; /* Space between image and text */
+        }
+
+        .publication-text {
+            flex-grow: 1;
+        }
+
+        /* Line separators between sections */
+        .publication-separator {
+            border-bottom: 3px solid black;
+            margin: 40px 0; /* Ensures equal spacing above and below separator */
+        }
+
+        /* Ensure padding at the bottom of the last publication */
+        .publication:last-child {
+            padding-bottom: 40px;
+        }
+
+        /* Add space for the link at the bottom */
+        .publication a {
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,17 +53,40 @@
             <a href="index.html">Home</a>
             <a href="2.research.html">Research</a>
             <a href="3.publications.html">Publications</a>
-            <a href="4.blog.html">AI Blog</a>
+            <a href="4.blog.html">Blog</a>
             <a href="5.cv.html">CV</a>
             <a href="6.useful_links.html">Useful Links</a>
             <a href="7.contact.html">Contact</a>
         </nav>
     </header>
+
     <main>
         <div class="content">
-            <h1>Current Research</h1>
-            <p>Coming soon! Please visit soon for updates.</p>
-            <!-- Add more content specific to research page here -->
+            <h1>Ongoing Research Projects</h1>
+            <!-- High-Level Summary -->
+            <section class="summary">
+                <p>
+                    Below are my most recent research projects that are ongoing. More advanced projects have a link to the papers which are either in preprint or review at the stated journal.
+                    For more information on any, please visit my contact page and email me and I will try to respond in a swift fashion.
+                </p>
+            </section>
+
+            <div class="publication-separator"></div>
+
+            <!-- Project 1 -->
+            <section class="Project 1">
+                <div class="project-text">
+                    <h2>Enhancing Depth and Breadth: The Role of Artificial Intelligence in Transforming Open Source Software Development</h2>
+                    <p><strong>Co-authors:</strong> Xinyu Li, Keongtae Kim</p>
+                    <p><strong>Brief Description/Abstract:</strong> This project explores the impact of GPT-4-powered AI developer tools, particularly GitHub Copilot X (CX), on open-source software (OSS) developers. By employing a difference-in-differences framework, the study investigates how these AI tools influence individual developers' productivity, multitasking abilities, and project management within OSS communities. The project focuses on a 25-week observation window around the release of CX in March 2023, analyzing behavioral changes in development patterns, commit activity, and language usage. The findings indicate that AI tools empower developers to manage multiple repositories, enhance code generation, and expand coding skills, particularly for less active contributors.</p>
+                    <p><strong>Keywords:</strong> Generative AI, Open-source Software Communities, Code Autocompletion</p>
+                    <p><strong>Why I am Interested in this Topic:</strong>...</p>
+                    <!-- [INSERT LATER WHEN AVAILABLE] a href="https://doi.org/10.1016/j.dss.2021.113695" target="_blank">Read the full paper</a> -->
+                </div>
+            </section>
+
+            <div class="publication-separator"></div>
+
         </div>
     </main>
     <footer>
